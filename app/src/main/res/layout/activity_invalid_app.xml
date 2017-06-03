@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white" >
 
-    <com.it51buy.mojian.view.AlphaRelativeLayout
+    <com.hrj.mojian.view.AlphaRelativeLayout
         android:id="@+id/top_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:text="@string/title_invalid_app"
             android:textColor="#fbfbfb"
             android:textSize="16dp" />
-    </com.it51buy.mojian.view.AlphaRelativeLayout>
+    </com.hrj.mojian.view.AlphaRelativeLayout>
 
     <TextView
         android:id="@+id/second_title"

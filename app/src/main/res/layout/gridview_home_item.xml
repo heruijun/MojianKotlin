@@ -5,7 +5,7 @@
     android:gravity="center"
     android:orientation="vertical" >
 
-    <com.it51buy.mojian.view.DotImageView
+    <com.hrj.mojian.view.DotImageView
         android:id="@+id/image"
         style="@style/image_grid_default"
         android:background="@drawable/home_grid_image_bg_selector" />

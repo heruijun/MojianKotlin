@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/AppPersistenceAPI.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/activity/MainActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/activity/RecentAppActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/activity/SelectAppActivity.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/bean/MJBean.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/eventcenter/EventName.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/logic/MJLogicImpl.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/msg/AppMessage.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/service/MJService.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/AppUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/Define.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/DisplayUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/FileUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/ImageUtils.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/NetUtil.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/utils/StringUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/view/FunctionView.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/view/MJView.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/it51buy/mojian/view/OperationView.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/AppPersistenceAPI.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/activity/MainActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/activity/RecentAppActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/activity/SelectAppActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/bean/MJBean.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/eventcenter/EventName.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/logic/MJLogicImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/msg/AppMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/service/MJService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/AppUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/Define.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/DisplayUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/FileUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/ImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/NetUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/StringUtil.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/FunctionView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/MJView.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/OperationView.java" charset="UTF-8" />
   </component>
 </project>

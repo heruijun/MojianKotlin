@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.it51buy.mojian"
+    xmlns:app="http://schemas.android.com/apk/res/com.hrj.mojian"
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
@@ -14,7 +14,7 @@
         android:paddingBottom="10dp"
         android:paddingTop="10dp" >
 
-        <com.it51buy.mojian.view.AlphaLinearLayout
+        <com.hrj.mojian.view.AlphaLinearLayout
             android:id="@+id/back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +33,7 @@
                 android:text="@string/title_add_mj"
                 android:textColor="#fbfbfb"
                 android:textSize="16dp" />
-        </com.it51buy.mojian.view.AlphaLinearLayout>
+        </com.hrj.mojian.view.AlphaLinearLayout>
 
         <ImageButton
             android:id="@+id/search"
@@ -45,7 +45,7 @@
             android:src="@drawable/top_bar_search_selector" />
     </RelativeLayout>
 
-    <com.it51buy.mojian.view.PagerSlidingTabStrip
+    <com.hrj.mojian.view.PagerSlidingTabStrip
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="50dp"
