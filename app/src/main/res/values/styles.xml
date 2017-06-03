@@ -1,0 +1,102 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="translateTheme" parent="android:Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="StyledIndicators" parent="@android:style/Theme.Light">
+        <item name="vpiCirclePageIndicatorStyle">@style/CustomCirclePageIndicator</item>
+    </style>
+
+    <style name="CustomCirclePageIndicator">
+        <item name="fillColor">#FF888888</item>
+        <item name="strokeColor">#FF000000</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="radius">10dp</item>
+        <item name="centered">true</item>
+    </style>
+
+    <style name="image_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    
+    <style name="image_mj_default" parent="@style/image_grid_default">
+        <item name="android:padding">@dimen/home_image_bg_padding</item>
+        <item name="android:background">@drawable/home_mj_bg_normal</item>
+    </style>
+
+    <style name="image_grid_default">
+        <item name="android:layout_width">@dimen/default_photo_size</item>
+        <item name="android:layout_height">@dimen/default_photo_size</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="text_default">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+    </style>
+
+    <style name="text_default_white" parent="@style/text_default">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="text_default_black" parent="@style/text_default">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="divider_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/divider_color</item>
+        <item name="android:layout_marginLeft">@dimen/divider_margin</item>
+        <item name="android:layout_marginRight">@dimen/divider_margin</item>
+    </style>
+
+    <style name="toggle_button">
+        <item name="android:background">@drawable/toggle_button_selector</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+        <item name="android:layout_width">65dip</item>
+        <item name="android:layout_height">25dip</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景暗淡 -->
+    </style>
+
+</resources>

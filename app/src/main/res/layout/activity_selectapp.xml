@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/bg">
+    
+	<LinearLayout 
+	    android:id="@+id/lLayoutSelectappTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"        
+        android:background="@drawable/top_bar_bg">
+        
+	    <ImageView
+	        android:id="@+id/imgViewArrow"
+	        android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_fanhui" 
+            android:clickable="true"/>
+	    <TextView 
+	        android:id="@+id/txtViewSelectFunc"
+	        android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/title_add_mj"
+            style="@style/activity_title_text"/>	    
+	    
+	</LinearLayout>
+	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp">
+
+            <FrameLayout
+                android:id="@+id/tabApplication"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/txtViewSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/application"
+                    android:textSize="20sp" />
+                <ImageView 
+                    android:id="@+id/imgSelAppTabAppFgx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/fengexian_sel"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/tabSystem"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtViewSystem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/system"
+                    android:textSize="20sp"  />
+                <ImageView 
+                    android:id="@+id/imgSelAppTabSystemFgx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/appdownfengexian"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/tabAdvanced"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txtViewAdvanced"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/advanced"
+                    android:textSize="20sp"  />
+                <ImageView 
+                    android:id="@+id/imgSelAppTabAdvancedFgx"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/appdownfengexian"
+                    android:layout_gravity="bottom"/>
+            </FrameLayout>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/fLayoutSelectApp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+	<ListView
+	    android:id="@+id/listViewSelApp"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent">    
+	</ListView>
+	<ListView 
+	    android:id="@+id/listViewSystem"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"></ListView>
+	
+	<ListView 
+	    android:id="@+id/listViewAdvanced"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:visibility="gone"></ListView>
+	</FrameLayout>
+</LinearLayout>

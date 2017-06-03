@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- base -->
+    <color name="bg_color">#fbfbfb</color>
+    <drawable name="listview_item_press_drawable">#ececec</drawable>
+    
+    <!-- 下划线 -->
+    <color name="divider_color">#b5b9c0</color>
+    
+    <!-- tab -->
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="tab_background">#FBFBFB</color>
+    <color name="tab_indicator_color">#E64040</color>
+    <color name="tab_text_chooose">#E23C3C</color>
+    
+    <!-- 通知栏不可用背景色 -->
+    <color name="notifi_mj_bg">#55BEBEBE</color>
+    
+</resources>

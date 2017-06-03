@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tupian" >
+
+        <ImageView
+            android:id="@+id/home_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/home_bg_bird" />
+
+        <ImageView
+            android:layout_width="103dp"
+            android:layout_height="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_logo" />
+
+        <com.it51buy.mojian.view.AlphaImageView
+            android:id="@+id/setting"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/home_setting_margin_right"
+            android:layout_marginTop="@dimen/home_setting_margin_top"
+            android:scaleType="centerInside"
+            android:src="@drawable/home_setting" />
+
+        <LinearLayout
+            android:id="@+id/operation_layout"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_sel"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/no_operation_prompt"
+                style="@style/text_default_white"
+                android:text="@string/no_operation"
+                android:visibility="gone" />
+
+            <com.it51buy.mojian.view.DropZoneLinearLayout
+                android:id="@+id/switch_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="@string/switching"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/image_default"
+                    android:src="@drawable/home_switching" />
+
+                <TextView
+                    style="@style/text_default_white"
+                    android:text="@string/switching" />
+            </com.it51buy.mojian.view.DropZoneLinearLayout>
+
+            <com.it51buy.mojian.view.DropZoneLinearLayout
+                android:id="@+id/remove_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:tag="@string/remove"
+                android:visibility="gone" >
+
+                <ImageView
+                    style="@style/image_default"
+                    android:src="@drawable/home_remove" />
+
+                <TextView
+                    style="@style/text_default_white"
+                    android:text="@string/remove" />
+            </com.it51buy.mojian.view.DropZoneLinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="306dp"
+        android:paddingTop="@dimen/home_viewpager_padding_top" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="86dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/home_bottom_margin"
+            android:layout_marginRight="@dimen/home_bottom_margin"
+            android:background="@drawable/home_bottom_bg"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/home_bottom_padding_left"
+            android:paddingRight="@dimen/home_bottom_padding_right" >
+
+            <LinearLayout
+                android:id="@+id/mj_1_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.it51buy.mojian.view.MJImageView
+                    android:id="@+id/mj_1_img"
+                    style="@style/image_mj_default"
+                    android:tag="@string/mj_1" />
+
+                <TextView
+                    android:id="@+id/mj_1_txt"
+                    style="@style/text_default_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mj_2_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.it51buy.mojian.view.MJImageView
+                    android:id="@+id/mj_2_img"
+                    style="@style/image_mj_default"
+                    android:tag="@string/mj_2" />
+
+                <TextView
+                    android:id="@+id/mj_2_txt"
+                    style="@style/text_default_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mj_3_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.it51buy.mojian.view.MJImageView
+                    android:id="@+id/mj_3_img"
+                    style="@style/image_mj_default"
+                    android:tag="@string/mj_3" />
+
+                <TextView
+                    android:id="@+id/mj_3_txt"
+                    style="@style/text_default_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mj_4_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.it51buy.mojian.view.MJImageView
+                    android:id="@+id/mj_4_img"
+                    style="@style/image_mj_default"
+                    android:tag="@string/mj_4" />
+
+                <TextView
+                    android:id="@+id/mj_4_txt"
+                    style="@style/text_default_black" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.it51buy.mojian.view.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/bottom"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            app:fillColor="@android:color/black"
+            app:radius="4dp"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="1dp" />
+    </RelativeLayout>
+
+</LinearLayout>

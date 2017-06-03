@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:orientation="vertical" 
+	android:background="@drawable/bg">
+
+    <LinearLayout
+        android:id="@+id/lLayoutHomeUp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_lan"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+        
+        <LinearLayout 
+            android:id="@+id/lLayoutTitle"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:orientation="horizontal">
+        	
+        <LinearLayout 
+            android:id="@+id/lLayoutTitle1"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/imageViewM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/m" />
+
+        <ImageView
+            android:id="@+id/imageViewMojian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/mojian" />
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/lLayoutTitle2"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:orientation="vertical">
+        
+        <ImageView
+            android:id="@+id/imageViewSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" 
+            android:layout_marginRight="15dp" 
+            android:layout_gravity="right"   
+            android:clickable="true"               
+            android:src="@drawable/settingbtn"/>
+        </LinearLayout>
+      
+		</LinearLayout>
+		
+        <LinearLayout 
+            android:id="@+id/lLayoutHomeDown"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:orientation="horizontal">		
+        
+		<LinearLayout
+                android:id="@+id/llayoutBtn1"
+                style="@style/btn_linear">
+        <ImageView
+            android:id="@+id/imageViewButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dayuan"/>       
+        
+		</LinearLayout>
+		
+		<LinearLayout
+                android:id="@+id/llayoutBtn2"
+                style="@style/btn_linear">
+        
+        <ImageView
+            android:id="@+id/imageViewButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xiaoyuan" />
+        
+		</LinearLayout>
+		
+		<LinearLayout
+                android:id="@+id/llayoutBtn3"
+                style="@style/btn_linear">
+        <ImageView
+            android:id="@+id/imageViewButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xiaoyuan" />
+        
+        </LinearLayout>
+        <LinearLayout
+                android:id="@+id/llayoutBtn4"
+                style="@style/btn_linear">
+        <ImageView
+            android:id="@+id/imageViewButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xiaoyuan" />
+        </LinearLayout>
+         
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/HomeDownLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:id="@+id/lLayoutFuncLine1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        
+            <LinearLayout
+                android:id="@+id/lLayoutFunction1"
+                style="@style/main_tab_but_linear"
+                android:background="@drawable/functionbtnbackground" >
+        	
+            <ImageView
+                android:id="@+id/imgFunction1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_zhuapai_nor">
+			</ImageView>
+			
+            <TextView
+                    android:id="@+id/textViewFunction1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/capture" />
+			
+			<ImageView
+       				android:id="@+id/imageViewfengeheng1"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />
+			
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu1"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            
+             <LinearLayout
+                android:id="@+id/lLayoutFunction2"
+                style="@style/main_tab_but_linear" 
+                android:background="@drawable/functionbtnbackground">
+            
+            <ImageView
+                android:id="@+id/imgFunction2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_shoudiantou_nor" >
+			</ImageView>
+			
+            <TextView
+                    android:id="@+id/textViewFunction2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/open_flash_light" />
+            <ImageView
+       				android:id="@+id/imageViewfengeheng2"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />
+			
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu2"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            <LinearLayout
+                android:id="@+id/lLayoutFuction3"
+                style="@style/main_tab_but_linear"
+                android:background="@drawable/functionbtnbackground" >
+            
+            <ImageView
+                android:id="@+id/imgFunction3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_wifi_nor" >
+			</ImageView>
+			
+			<TextView
+                    android:id="@+id/textViewFunction3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/function3" />         
+            <ImageView
+       				android:id="@+id/imageViewfengeheng3"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />  
+                        
+            </LinearLayout>
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:id="@+id/lLayoutFuncLine2"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal"
+        	android:layout_weight="1">
+            
+            <LinearLayout
+                android:id="@+id/lLayoutFunction4"
+                style="@style/main_tab_but_linear" 
+                android:background="@drawable/functionbtnbackground">
+            
+            <ImageView
+                android:id="@+id/imgFunction4"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_zhinengxiaoji_nor"></ImageView>
+            
+            <TextView
+                    android:id="@+id/textViewFunction4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/open_camera" />            
+            <ImageView
+       				android:id="@+id/imageViewfengeheng4"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu4"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            <LinearLayout
+                android:id="@+id/lLayoutFunction5"
+                style="@style/main_tab_but_linear"
+                android:background="@drawable/functionbtnbackground" >
+            
+            <ImageView
+                android:id="@+id/imgFunction5"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_zuijindakai_nor" >
+			</ImageView>
+			
+             <TextView
+                    android:id="@+id/textViewFunction5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/recently_opened" />
+           
+            <ImageView
+       				android:id="@+id/imageViewfengeheng5"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu5"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            <LinearLayout
+                android:id="@+id/lLayoutFunction6"
+                style="@style/main_tab_but_linear"
+                android:background="@drawable/functionbtnbackground" >
+            
+            <ImageView
+                android:id="@+id/imgFunction6"
+                style="@style/function_type_style"
+                android:layout_weight="1"
+                android:src="@drawable/button_luyin_nor"></ImageView>
+            
+             <TextView
+                    android:id="@+id/textViewFunction6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sound_recording" />
+            <ImageView
+       				android:id="@+id/imageViewfengeheng6"
+        			android:layout_width="fill_parent"
+        			android:layout_height="wrap_content"
+        			android:background="@drawable/fenggexian_heng" />            
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:id="@+id/lLayoutFuncLine3"
+            android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:orientation="horizontal"
+        	android:layout_weight="1">
+            
+            <LinearLayout
+                android:id="@+id/lLayoutFunction7"
+                style="@style/main_tab_but_linear" 
+                android:background="@drawable/functionbtnbackground">
+            
+            <ImageView
+                android:id="@+id/imgFunction7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/button_jieping_nor"></ImageView>
+            
+            <TextView
+                    android:id="@+id/textViewFunction7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/screenshot" />
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu7"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            <LinearLayout
+                android:id="@+id/lLayoutFunction8"
+                style="@style/main_tab_but_linear" 
+                android:background="@drawable/functionbtnbackground">
+            
+            <ImageView
+                android:id="@+id/imgFunction8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/button_shanchuliebiao_nor"></ImageView>
+            <TextView
+                    android:id="@+id/textViewFunction8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/function8" /> 
+            
+            </LinearLayout>
+            <ImageView
+       				android:id="@+id/imageViewfengeshu8"
+        			android:layout_width="wrap_content"
+        			android:layout_height="fill_parent"
+        			android:background="@drawable/fenggexian_shu" />
+            <LinearLayout
+                android:id="@+id/lLayoutFunction9"
+                style="@style/main_tab_but_linear" 
+                android:background="@drawable/functionbtnbackground">
+            
+            <ImageView
+                android:id="@+id/imgFunction9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/button_tianjiagongneng_nor"></ImageView>
+            
+            <TextView
+                    android:id="@+id/textViewFunction9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/add_function" />
+            
+            </LinearLayout>
+                        
+            
+        </LinearLayout>
+        
+        
+        
+    </LinearLayout>
+    
+    
+</LinearLayout>

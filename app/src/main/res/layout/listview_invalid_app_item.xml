@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@drawable/listview_item_bg" >
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/image_grid_default"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/image"
+        android:textColor="#000000"
+        android:textSize="16dp" />
+
+    <ToggleButton
+        android:id="@+id/toggle"
+        style="@style/toggle_button"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="" />
+
+</RelativeLayout>
