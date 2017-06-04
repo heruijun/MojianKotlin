@@ -41,12 +41,12 @@
     <string name="title_common_problem">常见问题</string>
     <string name="title_feed_back">意见反馈</string>
     <string name="title_invalid_app">已安装应用</string>
-    
+
     <!-- update dialog -->
     <string name="update_dialog_message">发现新版本，是否现在更新?</string>
     <string name="update_dialog_ok">现在更新</string>
     <string name="update_dialog_cancel">以后再说</string>
-    
+
     <!-- float prompt dialog -->
     <string name="float_dialog_message">为保证魔键功能正常使用，请在魔键应用详情页执行以下操作：\n打开显示悬浮窗</string>
     <string name="float_dialog_ok">设置</string>
