@@ -50,7 +50,7 @@ public class App extends Application {
 
     private void initialize() {
         mAppPersistence = new AppPersistenceAPI(this);
-        MJToast.init(this);
+        MJToast.INSTANCE.init(this);
     }
 
     public void bindService() {

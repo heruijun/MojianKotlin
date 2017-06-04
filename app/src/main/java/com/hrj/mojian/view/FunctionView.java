@@ -303,7 +303,7 @@ public class FunctionView {
             }
 
             if (mItems.size() >= 32) {
-                MJToast.show(R.string.no_add_more_mj, Toast.LENGTH_SHORT);
+                MJToast.INSTANCE.show(R.string.no_add_more_mj, Toast.LENGTH_SHORT);
                 return;
             }
 

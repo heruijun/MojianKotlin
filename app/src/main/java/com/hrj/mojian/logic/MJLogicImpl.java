@@ -131,16 +131,16 @@ public class MJLogicImpl implements MJLogic {
             }
             Runtime.getRuntime().exec("su", null, null);
             Runtime.getRuntime().exec("rm -rf " + filepath);
-            MJToast.show(String.format(mContext.getString(R.string.screen_shot_success), filepath), Toast.LENGTH_LONG);
+            MJToast.INSTANCE.show(String.format(mContext.getString(R.string.screen_shot_success), filepath), Toast.LENGTH_LONG);
             FileUtil.galleryAddPic(filepath, mContext);
         } catch (IOException e) {
             e.printStackTrace();
-            MJToast.show(R.string.no_root, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_root, Toast.LENGTH_SHORT);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (NoSdCardException e1) {
             e1.printStackTrace();
-            MJToast.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
         }
     }
 
@@ -161,7 +161,7 @@ public class MJLogicImpl implements MJLogic {
             clearAll.setAccessible(true);
             clearAll.invoke(statusBarObject);
         } catch (Exception e) {
-            MJToast.show(R.string.no_recent_app, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_recent_app, Toast.LENGTH_SHORT);
         }
     }
 
@@ -203,7 +203,7 @@ public class MJLogicImpl implements MJLogic {
         MJLog.d(TAG, "----------- after memory info : " + afterMem);
 
         String prompt = String.format(mContext.getString(R.string.clear_memeory_success), String.valueOf(afterMem - beforeMem));
-        MJToast.show(prompt, Toast.LENGTH_LONG);
+        MJToast.INSTANCE.show(prompt, Toast.LENGTH_LONG);
     }
 
     // 获取可用内存大小
@@ -233,7 +233,7 @@ public class MJLogicImpl implements MJLogic {
             invokeBooleanArgConnectivityMethod(connectivityManager, "setMobileDataEnabled", !isMobileDataEnable);
         } catch (Exception e) {
             e.printStackTrace();
-            MJToast.show(R.string.no_mobile_net, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_mobile_net, Toast.LENGTH_SHORT);
         }
     }
 
@@ -273,10 +273,10 @@ public class MJLogicImpl implements MJLogic {
             boolean result = (Boolean) method.invoke(wifiManager, null, !wifiApState);
             if (result) {
             } else {
-                MJToast.show(R.string.no_wifi_ap, Toast.LENGTH_SHORT);
+                MJToast.INSTANCE.show(R.string.no_wifi_ap, Toast.LENGTH_SHORT);
             }
         } catch (Exception e) {
-            MJToast.show(R.string.no_wifi_ap, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_wifi_ap, Toast.LENGTH_SHORT);
         }
     }
 
@@ -304,7 +304,7 @@ public class MJLogicImpl implements MJLogic {
     public void setBluetooth() {
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (null == bluetoothAdapter) {
-            MJToast.show(R.string.no_bluetooth, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_bluetooth, Toast.LENGTH_SHORT);
             return;
         }
         if (bluetoothAdapter.isEnabled()) {
@@ -343,7 +343,7 @@ public class MJLogicImpl implements MJLogic {
         NfcAdapter nfcAdapter = NfcAdapter.getDefaultAdapter(mContext);
 
         if (nfcAdapter == null) {
-            MJToast.show(R.string.no_nfc, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_nfc, Toast.LENGTH_SHORT);
             return;
         }
 

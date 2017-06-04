@@ -28,7 +28,7 @@ public class AppUtil {
             pi = pm.getPackageInfo(packageName, 0);
         } catch (NameNotFoundException e) {
             e.printStackTrace();
-            MJToast.show(R.string.no_open_app, Toast.LENGTH_SHORT);
+            MJToast.INSTANCE.show(R.string.no_open_app, Toast.LENGTH_SHORT);
             return;
         }
 

@@ -29,7 +29,7 @@ public class CameraFlash {
 			Class.forName("android.hardware.Camera");
 			return true;
 		} catch (ClassNotFoundException e) {
-			MJToast.show(R.string.no_flash_light, Toast.LENGTH_SHORT);
+			MJToast.INSTANCE.show(R.string.no_flash_light, Toast.LENGTH_SHORT);
 			return false;
 		}
 	}

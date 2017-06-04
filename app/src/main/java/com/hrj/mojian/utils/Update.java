@@ -5,7 +5,6 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.DialogInterface.OnClickListener;
-import android.widget.Toast;
 
 import com.hrj.mojian.R;
 
@@ -23,14 +22,6 @@ public class Update {
 			mInstance = new Update();
 		}
 		return mInstance;
-	}
-
-	public void checkUpdate(Context context) {
-		if (!NetUtil.isUsingNetwork(context)) {
-			MJToast.show(R.string.no_network, Toast.LENGTH_SHORT);
-			return;
-		}
-		getDialog(context).show();
 	}
 
 	private Dialog getDialog(final Context context) {

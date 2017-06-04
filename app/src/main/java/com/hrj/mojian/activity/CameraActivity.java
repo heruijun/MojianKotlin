@@ -55,7 +55,7 @@ public class CameraActivity extends Activity {
 			openCamera();
 			autoFocus();
 		} catch (Exception e) {
-			MJToast.show(R.string.no_camera, Toast.LENGTH_SHORT);
+			MJToast.INSTANCE.show(R.string.no_camera, Toast.LENGTH_SHORT);
 			stopCamera();
 		}
 	}
@@ -114,11 +114,11 @@ public class CameraActivity extends Activity {
 				fOut.flush();
 				fOut.close();
 				FileUtil.galleryAddPic(path, CameraActivity.this);
-				MJToast.show(String.format(getString(R.string.take_photo_success), path), Toast.LENGTH_LONG);
+				MJToast.INSTANCE.show(String.format(getString(R.string.take_photo_success), path), Toast.LENGTH_LONG);
 			} catch (NoSdCardException e) {
-				MJToast.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
+				MJToast.INSTANCE.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
 			} catch (IOException e) {
-				MJToast.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
+				MJToast.INSTANCE.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
 			} finally {
 				stopCamera();
 			}

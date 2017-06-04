@@ -212,7 +212,7 @@ public class RecentAppActivity extends Activity {
                 try {
                     startActivity(intent);
                 } catch (ActivityNotFoundException e) {
-                    MJToast.show(R.string.no_launch_recent_task, Toast.LENGTH_SHORT);
+                    MJToast.INSTANCE.show(R.string.no_launch_recent_task, Toast.LENGTH_SHORT);
                 } finally {
                     if (mDialog != null) {
                         mDialog.dismiss();

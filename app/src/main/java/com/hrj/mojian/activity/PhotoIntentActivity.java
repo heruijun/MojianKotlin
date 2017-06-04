@@ -33,7 +33,7 @@ public class PhotoIntentActivity extends Activity {
 			intent.putExtra(MediaStore.EXTRA_OUTPUT, photoUri);
 			startActivityForResult(intent, ACTION_TAKE_PHOTO_B);
 		} catch (NoSdCardException e) {
-			MJToast.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
+			MJToast.INSTANCE.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
 		}
 	}
 
@@ -42,7 +42,7 @@ public class PhotoIntentActivity extends Activity {
 		switch (requestCode) {
 		case ACTION_TAKE_PHOTO_B:
 			if (resultCode == RESULT_OK) {
-				MJToast.show(String.format(getString(R.string.take_photo_success), mCurrentPhotoPath), Toast.LENGTH_LONG);
+				MJToast.INSTANCE.show(String.format(getString(R.string.take_photo_success), mCurrentPhotoPath), Toast.LENGTH_LONG);
 				handleBigCameraPhoto();
 			}
 			break;

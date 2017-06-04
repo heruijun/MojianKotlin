@@ -160,7 +160,7 @@ public class AddMJActivity extends Activity implements OnClickListener {
 			bitmap.compress(CompressFormat.PNG, 100, new FileOutputStream(file));
 		} catch (NoSdCardException e) {
 			e.printStackTrace();
-			MJToast.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
+			MJToast.INSTANCE.show(R.string.no_sdcard, Toast.LENGTH_SHORT);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

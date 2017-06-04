@@ -322,7 +322,7 @@ public class MJService extends Service implements OnTouchListener, View.OnKeyLis
                     remoteView.setImageViewBitmap(viewId, bitmapDrawable.getBitmap());
                 } catch (NameNotFoundException e) {
                     e.printStackTrace();
-                    MJToast.show(R.string.no_app_icon, Toast.LENGTH_SHORT);
+                    MJToast.INSTANCE.show(R.string.no_app_icon, Toast.LENGTH_SHORT);
                 }
                 break;
 
