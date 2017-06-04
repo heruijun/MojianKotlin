@@ -51,7 +51,7 @@ class MJImageView : android.support.v7.widget.AppCompatImageView, OnLongClickLis
     }
 
     private fun canDrag(): Boolean {
-        val out = arrayOf<Boolean>(null!!)
+        val out = arrayOf<Boolean>(false)
         EC.getInstence().dispatch(out, EventName.mj_is_setted, Integer.parseInt(mType))
         return out[0]
     }
