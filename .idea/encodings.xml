@@ -3,7 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/AppPersistenceAPI.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/bean/MJBean.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/eventcenter/EventName.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/eventcenter/EventName.kt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/logic/MJLogicImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/msg/AppMessage.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/service/MJService.java" charset="UTF-8" />
@@ -14,7 +14,6 @@
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/ImageUtils.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/NetUtil.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/utils/StringUtil.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/FunctionView.kt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/MJView.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/src/main/java/com/hrj/mojian/view/OperationView.java" charset="UTF-8" />
   </component>

@@ -1,6 +1,6 @@
-package com.hrj.mojian.eventcenter;
+package com.hrj.mojian.eventcenter
 
-public enum EventName {
+enum class EventName {
     /**
      * 更新操作栏视图，需要传四个boolean参数，1、显示操作栏，2、显示文字提示，3、显示替换，4、显示移除
      */
@@ -44,6 +44,6 @@ public enum EventName {
     /**
      * 替换首页mjBean，参数：1、被替换的mjBean，2、新的mjBean
      */
-    replace_function_item_from_home,
+    replace_function_item_from_home
 
 }

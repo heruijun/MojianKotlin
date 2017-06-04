@@ -15,7 +15,7 @@ public class EC {
     }
 
     public interface ECRunnable {
-        public void run(Object[] outValues, Object[] inValues);
+        public void run(Object[] outValues, Object... inValues);
     }
 
     public void regedit(EventName eventName, ECRunnable run) {
