@@ -18,24 +18,24 @@ class SettingActivity : Activity() {
     }
 
     private fun initView() {
-        key_vibration_toggle!!.isChecked = AppPreference.getBoolean(Define.PREFERENCES_TURNOVER_INVALID, true)
+        key_vibration_toggle!!.isChecked = AppPreference.getBoolean(Define.PREFERENCES_KEY_VIBRATION, true)
 
         turnover_invalid_toggle!!.isChecked = AppPreference.getBoolean(Define.PREFERENCES_TURNOVER_INVALID, true)
         notification_toggle!!.isChecked = AppPreference.getBoolean(Define.PREFERENCES_NOTIFICATION, true)
 
-        key_vibration_toggle!!.setOnCheckedChangeListener { buttonView, isChecked ->
-            AppPreference.setBoolean(Define.PREFERENCES_KEY_VIBRATION, key_vibration_toggle!!.isChecked)
-            App.getInstance().setKeyVibrationToggle(key_vibration_toggle!!.isChecked)
+        key_vibration_toggle!!.setOnCheckedChangeListener { _, isChecked ->
+            AppPreference.setBoolean(Define.PREFERENCES_KEY_VIBRATION, isChecked)
+            App.getInstance().setKeyVibrationToggle(isChecked)
         }
 
-        turnover_invalid_toggle!!.setOnCheckedChangeListener { buttonView, isChecked ->
-            AppPreference.setBoolean(Define.PREFERENCES_TURNOVER_INVALID, turnover_invalid_toggle!!.isChecked)
-            App.getInstance().setTurnoverInvalidToggle(turnover_invalid_toggle!!.isChecked)
+        turnover_invalid_toggle!!.setOnCheckedChangeListener { _, isChecked ->
+            AppPreference.setBoolean(Define.PREFERENCES_TURNOVER_INVALID, isChecked)
+            App.getInstance().setTurnoverInvalidToggle(isChecked)
         }
 
-        notification_toggle!!.setOnCheckedChangeListener { buttonView, isChecked ->
-            AppPreference.setBoolean(Define.PREFERENCES_NOTIFICATION, notification_toggle!!.isChecked)
-            App.getInstance().setNotificationToggle(notification_toggle!!.isChecked)
+        notification_toggle!!.setOnCheckedChangeListener { _, isChecked ->
+            AppPreference.setBoolean(Define.PREFERENCES_NOTIFICATION, isChecked)
+            App.getInstance().setNotificationToggle(isChecked)
         }
 
         application_invalid_view!!.setOnClickListener {
