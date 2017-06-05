@@ -14,7 +14,6 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -26,7 +25,7 @@ import com.hrj.mojian.utils.ImageUtils;
 
 public class MainActivity extends Activity {
 
-    ImageButton imgSetting;
+    ImageView imgSetting;
     ImageView imgBtn1, imgBtn2, imgBtn3, imgBtn4;
 
     Boolean imgBtn1Selected = true;
@@ -58,7 +57,7 @@ public class MainActivity extends Activity {
     }
 
     private void prepareView() {
-        imgSetting = (ImageButton) findViewById(R.id.imageViewSetting);
+        imgSetting = (ImageView) findViewById(R.id.imageViewSetting);
 
         imgBtn1 = (ImageView) findViewById(R.id.imageViewButton1);
         imgBtn2 = (ImageView) findViewById(R.id.imageViewButton2);
